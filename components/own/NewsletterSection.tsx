@@ -1,6 +1,7 @@
 "use client";
 
 import { useState } from "react";
+import ConvertKitForm from "../convert-kit-form";
 
 const NewsletterSection = () => {
   const [email, setEmail] = useState("");
@@ -33,27 +34,9 @@ const NewsletterSection = () => {
                 Comparto mis errores y aprendizajes mientras construyo una <span className="font-bold text-secondary underline decoration-secondary/30 underline-offset-4">carrera global</span>.
               </p>
             </div>
-
-            <form
-              onSubmit={(e) => e.preventDefault()}
-              className="flex flex-col sm:flex-row gap-0 mb-4 group"
-            >
-              <input
-                type="email"
-                placeholder="Tu correo electrónico..."
-                value={email}
-                onChange={(e) => setEmail(e.target.value)}
-                // CAMBIO: Border y focus adaptados a la paleta Dark/Lime
-                className="flex-1 px-5 py-4 border-2 border-primary-foreground/20 bg-transparent text-primary-foreground placeholder:text-primary-foreground/30 text-sm focus:outline-none focus:border-secondary transition-colors"
-              />
-              <button className="bg-secondary text-primary px-8 py-4 text-sm font-bold uppercase tracking-widest hover:bg-secondary/90 transition-all shrink-0 active:scale-95">
-                Únete a la travesía
-              </button>
-            </form>
-
-            <button className="text-primary-foreground/30 text-xs uppercase tracking-widest hover:text-secondary transition-colors font-sans">
-              No gracias
-            </button>
+            <div className="flex gap-2">
+              <ConvertKitForm uid="bfc8a3a54f" />
+            </div>
           </div>
 
         </div>

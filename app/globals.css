@@ -171,23 +171,28 @@
   }
 }
 
-/* FormKit Overrides (Corregido para Tailwind v4) */
+/* FormKit Overrides - Colores Crudos */
 .formkit-submit.formkit-submit.formkit-submit {
-  /* Usamos el prefijo ! en cada utilidad en lugar de !important al final */
-  @apply !bg-primary !text-primary-foreground !border-none;
+  background-color: #d2ff7d !important;
+  color: #19282d !important;
+  font-weight: 700 !important;
+  text-transform: uppercase !important;
+  letter-spacing: 0.05em !important;
+  border: none !important;
 }
 
 .formkit-input.formkit-input.formkit-input {
-  @apply !border !border-border !text-foreground;
+  background-color: transparent !important;
+  border: 1px solid rgba(210, 255, 125, 0.2) !important;
+  /* Borde sutil limón */
+  color: #d2ff7d !important;
 }
 
-/* Modo Oscuro */
-.dark .formkit-submit.formkit-submit.formkit-submit {
-  /* Si prefieres no usar @apply para esto, el CSS puro sigue siendo válido */
-  background-color: hsl(82 100% 74%) !important;
-  color: hsl(195 25% 14%) !important;
+.formkit-input.formkit-input.formkit-input::placeholder {
+  color: rgba(210, 255, 125, 0.4) !important;
 }
 
+/* Evitar el spinner que descuadra el diseño */
 .formkit-spinner {
   display: none !important;
 }
