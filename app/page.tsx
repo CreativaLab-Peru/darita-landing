@@ -1,19 +1,41 @@
-import { Button } from "@/components/ui/button"
+import AwardsSection from "@/components/own/AwardsSection";
+import BiographySection from "@/components/own/BiographySection";
+import ContactSection from "@/components/own/ContactSection";
+import FellowshipsSection from "@/components/own/FellowshipsSection";
+import HeroSection from "@/components/own/HeroSection";
+import NewsletterSection from "@/components/own/NewsletterSection";
+import PressSection from "@/components/own/PressSection";
+import SideNav from "@/components/own/SideNav";
+import SpeakerSection from "@/components/own/SpeakerSection";
+import StartupsSection from "@/components/own/StartupsSection";
+import WorkWithMeSection from "@/components/own/WorkWithMeSection";
 
 export default function Page() {
   return (
-    <div className="flex min-h-svh p-6">
-      <div className="flex max-w-md min-w-0 flex-col gap-4 text-sm leading-loose">
-        <div>
-          <h1 className="font-medium">Project ready!</h1>
-          <p>You may now add components and start building.</p>
-          <p>We&apos;ve already added the button component for you.</p>
-          <Button className="mt-2">Button</Button>
-        </div>
-        <div className="font-mono text-xs text-muted-foreground">
-          (Press <kbd>d</kbd> to toggle dark mode)
-        </div>
-      </div>
+    <div className="relative">
+      <SideNav />
+      <main className="lg:ml-48 xl:ml-56">
+        <HeroSection />
+        <NewsletterSection />
+        <BiographySection />
+        <AwardsSection />
+        <FellowshipsSection />
+        <SpeakerSection />
+        <StartupsSection />
+        <PressSection />
+        <WorkWithMeSection />
+        <ContactSection />
+      </main>
     </div>
+    // <div className="min-h-svh p-6">
+    //   <main>
+    //   <h1>Bienvenido a la Landing A B</h1>
+    //   <ModeToggle />
+    //     {/* El script inyectará el formulario automáticamente aquí */}
+    //   <ConvertKitForm uid="bfc8a3a54f" />
+    // </main>
+    // </div>
   )
 }
+
+{/* <script async data-uid="bfc8a3a54f" src="https://levely.kit.com/bfc8a3a54f/index.js"></script> */ }
