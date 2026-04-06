@@ -5,7 +5,7 @@ import Image from "next/image";
 const talks = [
   { title: "Women in AI & Blockchain", event: "Globant 2024", image: "/speaker-globant.jpg" },
   { title: "Pitch startup", event: "Innovandes Cusco by PECAP", image: "/speaker-pecap.jpg" },
-  { title: "Design Thinking para proyectos STEAM", event: "Solve for Tomorrow by Samsung", image: null },
+  { title: "Design Thinking para proyectos STEAM", event: "Solve for Tomorrow by Samsung", image: "/google_for_educ.jpeg" },
   { title: "Women in STEAM", event: "Embajada Británica", image: "/speaker-embajada-britanica.jpg" },
 ];
 

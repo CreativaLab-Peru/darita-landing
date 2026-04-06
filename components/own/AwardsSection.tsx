@@ -5,13 +5,13 @@ const awards = [
     year: "2025",
     title: "Startup ganadora 11G",
     org: "ProInnóvate Perú",
-    image: null,
+    image: "/startup-11g.jpg",
   },
   {
     year: "2023",
     title: "Reconocimiento a emprendimiento innovador",
     org: "Innovandes Cusco",
-    image: null,
+    image: "/PECAP.JPG",
   },
 ];
 
