@@ -47,15 +47,18 @@ const SideNav = () => {
             className={`
               group flex items-center gap-4 py-2 px-4 rounded-lg text-sm font-bold transition-all duration-300
               ${isActive
-                ? "bg-[#d2ff7d] text-[#19282d] shadow-sm translate-x-2"
-                : "text-[#19282d]/50 hover:text-[#19282d] hover:translate-x-1"
+                ? "bg-[#d2ff7d] text-[#19282d] shadow-sm translate-x-2 dark:bg-[#d2ff7d] dark:text-[#19282d]"
+                : "text-[#19282d]/50 hover:text-[#19282d] hover:translate-x-1 dark:text-white/50 dark:hover:text-white"
               }
             `}
           >
             {/* El número a la izquierda */}
             <span className={`
               text-[10px] w-4 font-mono transition-colors
-              ${isActive ? "text-[#19282d]/40" : "text-[#19282d]/30"}
+              ${isActive
+                ? "text-[#19282d]/40 dark:text-[#19282d]/40"
+                : "text-[#19282d]/30 dark:text-white/30"
+              }
             `}>
               {i + 1}.
             </span>
